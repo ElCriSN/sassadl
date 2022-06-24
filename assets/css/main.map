@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"scss/main.scss"
+	],
+	"sourcesContent": [
+		"$primary-color: red;\r\n\r\np {\r\n    color: $primary-color;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ";;AAEA,AAAA,CAAC,CAAC;EACE,KAAK,EAHO,GAAG;CAIlB"
+}
