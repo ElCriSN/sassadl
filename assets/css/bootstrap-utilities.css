@@ -5,6 +5,66 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css?family=Zhi+Mang+Xing:400");
+/* line 11, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/_variables.scss */
+html {
+  font-size: 100%;
+}
+
+/*16px*/
+/* line 13, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/_variables.scss */
+body {
+  background: white;
+  font-family: 'Zhi Mang Xing', cursive;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+/* line 21, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/_variables.scss */
+p {
+  margin-bottom: 1rem;
+}
+
+/* line 23, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/_variables.scss */
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Zhi Mang Xing', cursive;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* line 30, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/_variables.scss */
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+/* line 35, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/_variables.scss */
+h2 {
+  font-size: 2.441rem;
+}
+
+/* line 37, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/_variables.scss */
+h3 {
+  font-size: 1.953rem;
+}
+
+/* line 39, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/_variables.scss */
+h4 {
+  font-size: 1.563rem;
+}
+
+/* line 41, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/_variables.scss */
+h5 {
+  font-size: 1.25rem;
+}
+
+/* line 43, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/_variables.scss */
+small, .text_small {
+  font-size: 0.8rem;
+}
+
 /* line 3, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/mixins/_clearfix.scss */
 .clearfix::after {
   display: block;
@@ -90,6 +150,16 @@
 /* line 6, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/helpers/_colored-links.scss */
 .link-dark:hover, .link-dark:focus {
   color: #1a1e21;
+}
+
+/* line 2, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/helpers/_colored-links.scss */
+.link-purple {
+  color: #cf649a;
+}
+
+/* line 6, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/helpers/_colored-links.scss */
+.link-purple:hover, .link-purple:focus {
+  color: #d983ae;
 }
 
 /* line 3, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/helpers/_ratio.scss */
@@ -610,6 +680,11 @@
 /* line 64, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/mixins/_utilities.scss */
 .border-dark {
   border-color: #212529 !important;
+}
+
+/* line 64, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/mixins/_utilities.scss */
+.border-purple {
+  border-color: #cf649a !important;
 }
 
 /* line 64, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/mixins/_utilities.scss */
@@ -1638,7 +1713,7 @@
 }
 
 /* line 64, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/mixins/_utilities.scss */
-.text-light {
+.text-light, .card-title {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
@@ -1647,6 +1722,12 @@
 .text-dark {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+}
+
+/* line 64, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/mixins/_utilities.scss */
+.text-purple {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-purple-rgb), var(--bs-text-opacity)) !important;
 }
 
 /* line 64, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/mixins/_utilities.scss */
@@ -1754,9 +1835,15 @@
 }
 
 /* line 64, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/mixins/_utilities.scss */
-.bg-dark {
+.bg-dark, .btn btn-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* line 64, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/mixins/_utilities.scss */
+.bg-purple {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-purple-rgb), var(--bs-bg-opacity)) !important;
 }
 
 /* line 64, ../desafíolatam/módulo2cssavanzado/unidad4sass/bootstrap-5.1.3/bootstrap-5.1.3/scss/mixins/_utilities.scss */
