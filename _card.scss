@@ -2,6 +2,15 @@
 // Base styles
 //
 
+// New STYLES HAHAHAHAA =)!!!
+.bg-dark {
+  background-color: black;
+}
+
+.text-light {
+  color: white;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -43,11 +52,6 @@
   > .list-group + .card-footer {
     border-top: 0;
   }
-}
-
-.card-fixed-width {
-  @extend .card;
-  width: 18rem;
 }
 
 .card-body {
